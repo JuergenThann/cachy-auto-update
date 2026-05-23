@@ -125,19 +125,9 @@ else
 			# shellcheck source=src/lib/alhp_check.sh disable=SC2154
 			source "${libdir}/alhp_check.sh"
 		fi
-		ask_msg "$(eval_gettext "Proceed with update? [Y/n]")"
 
-		# shellcheck disable=SC2154
-		case "${answer}" in
-			"$(eval_gettext "Y")"|"$(eval_gettext "y")"|"")
-				# shellcheck disable=SC2034,SC2154
-				proceed_with_update="true"
-				echo
-			;;
-			*)
-				error_msg "$(eval_gettext "The update has been aborted\n")" && quit_msg
-				exit 4
-			;;
-		esac
+		# shellcheck disable=SC2034,SC2154
+		proceed_with_update="true"
+		echo
 	fi
 fi
