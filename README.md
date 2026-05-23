@@ -1,4 +1,8 @@
-# Cachy-Update (fork of [Arch-Update](https://github.com/Antiz96/arch-update))
+# Cachy-Auto-Update (fork of [Cachy-Update](https://github.com/CachyOS/cachy-update))
+
+WIP and not recommended! Forking this for use on my wife's PC only. I am switching her PC over from Windows and this 
+fork is my idea of making that transition easier for her, by not having to deal with updates herself or having to occupy 
+her PC on the regular.
 
 <p align="center">
   <img width="460" height="300" src="https://github.com/user-attachments/assets/5782bd11-084a-4ca3-b599-1c322ee11b84">
