@@ -76,19 +76,19 @@ info_msg() {
 	echo -e "${green}==>${color_off}${bold} ${msg}${color_off}"
 }
 
-# Definition of the ask_msg function: Display a message as an interactive question
-ask_msg() {
-	msg="${1}"
-	# shellcheck disable=SC2034
-	read -rp $"$(echo -e "${blue}->${color_off}${bold} ${msg}${color_off} ")" answer
-}
+## Definition of the ask_msg function: Display a message as an interactive question
+#ask_msg() {
+#	msg="${1}"
+#	# shellcheck disable=SC2034
+#	read -rp $"$(echo -e "${blue}->${color_off}${bold} ${msg}${color_off} ")" answer
+#}
 
-# Definition of the ask_msg_array function: Display a message as an interactive question with multiple possible answers 
-ask_msg_array() {
-	msg="${1}"
-	# shellcheck disable=SC2034
-	read -rp $"$(echo -e "${blue}->${color_off}${bold} ${msg}${color_off} ")" -a answer_array
-}
+## Definition of the ask_msg_array function: Display a message as an interactive question with multiple possible answers 
+#ask_msg_array() {
+#	msg="${1}"
+#	# shellcheck disable=SC2034
+#	read -rp $"$(echo -e "${blue}->${color_off}${bold} ${msg}${color_off} ")" -a answer_array
+#}
 
 # Definition of the warning_msg function: Display a message as a warning message
 warning_msg() {
@@ -102,17 +102,17 @@ error_msg() {
 	echo -e >&2 "${red}==> $(eval_gettext "ERROR"):${color_off}${bold} ${msg}${color_off}"
 }
 
-# Definition of the continue_msg function: Display the continue message
-continue_msg() {
-	msg="$(eval_gettext "Press \"enter\" to continue ")"
-	read -n 1 -r -s -p $"$(info_msg "${msg}")" && echo
-}
+## Definition of the continue_msg function: Display the continue message
+#continue_msg() {
+#	msg="$(eval_gettext "Press \"enter\" to continue ")"
+#	read -n 1 -r -s -p $"$(info_msg "${msg}")" && echo
+#}
 
-# Definition of the quit_msg function: Display the quit message
-quit_msg() {
-	msg="$(eval_gettext "Press \"enter\" to quit ")"
-	read -n 1 -r -s -p $"$(info_msg "${msg}")" && echo
-}
+## Definition of the quit_msg function: Display the quit message
+#quit_msg() {
+#	msg="$(eval_gettext "Press \"enter\" to quit ")"
+#	read -n 1 -r -s -p $"$(info_msg "${msg}")" && echo
+#}
 
 # Definition of the AUR helper to use (depending on if / which one is installed on the system and if it's not already defined in arch-update.conf) for the optional AUR packages support
 check_aur_helper() {
