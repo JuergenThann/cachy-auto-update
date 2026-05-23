@@ -5,8 +5,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # General variables
-name="arch-update"
-_name="Arch-Update"
+name="arch-auto-update"
+_name="Arch-Auto-Update"
 version="3.19.4"
 option="${1}"
 
